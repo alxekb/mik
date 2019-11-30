@@ -9,6 +9,7 @@ ruby '2.6.3'
 gem 'autoprefixer-rails'
 gem 'bootstrap', '~> 4.3.1'
 gem 'devise', '~> 4.7'
+gem 'draper', '~> 3.1'
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
 gem 'honeybadger'
@@ -35,6 +36,8 @@ group :development do
   gem 'rack-mini-profiler', require: false
   gem 'spring'
   gem 'web-console'
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 group :development, :test do
