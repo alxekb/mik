@@ -6,6 +6,8 @@
   h4 Новости
   - @posts.each do |post|
     .card
-      h6 = post.title
-      p = post.body
-      p = post.user.email
+      h6.card-header = post.title
+      .card-body
+        = post.body
+        .footer
+          = post.signature
